@@ -1,0 +1,185 @@
+//**********Шапка********************
+
+.header
+    background: var(--theme-color-base)
+    border-bottom: 1px solid #E6E6E6
+
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 15px 0px
+
+    .navigation
+        &__list
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__item
+            padding: 5px
+            position: relative
+        &__link
+            text-decoration: none
+            transition: 0.5s
+            &-circle
+                display: block
+                width: 22px
+                height: 22px
+                background: #4094EF
+                border-radius: 50%
+        &__iconMes
+            display: block
+            width: 16px
+            height: 16px
+            position: absolute
+            top: -5px
+            left: 15px
+            background: #DC565B
+            border-radius: 50%
+            color: white
+            font-size: 12px
+            text-align: center
+            line-height: 16px
+            +regular
+
+    .logo
+        padding-left: 2%
+
+    .search
+        display: none
+        position: relative
+        &__field
+            height: 27px
+            background: #FAFAFA
+            border: 1px solid #8F8F8F
+            border-radius: 5px
+            &::placeholder
+                color: #8F8F8F
+                text-align: center
+                font-size: 10px
+
+//**********Профиль пользователя********************
+
+.profiles
+    background: #FAFAFA
+    &__wrap
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        background: #FAFAFA
+        padding: 35px 0px 50px 0px
+
+    .profile
+
+        &__foto
+            width: 30%
+            padding-left: 2%
+            img
+                width: 100%
+        &__info
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            width: 65%
+            padding-left: 2%
+        &__otherusers
+            display: flex
+            align-items: center
+
+    .info
+        font-size: 12px
+        +regular
+        &__useName
+            padding-right: 4%
+            font-size: 22px
+            +regular
+        &__btn
+            width: 72px
+            height: 22px
+            font-size: 12px
+            margin-right: 2%
+        &__btn2
+            width: 27px
+            height: 22px
+            font-size: 15px
+            margin-right: 2%
+
+        &__rating
+            margin: 10px 100% 10px 0px
+            font-size: 12px
+            color: #262626
+            +medium
+            &-bold
+                margin: 0px 3px 0px 0px
+                line-height: 15px
+                +bold
+            span:first-child
+                margin-left: 0px
+
+        &__useNameMin
+            +bold
+            margin-right: 100%
+        &__useData
+            a
+                text-decoration: none
+                color: #133768
+    .otherusers
+        &__fotoOU
+            width: 15%
+            margin: 30px 0px 0px 5%
+            text-decoration: none
+            &-foto
+                width: 100%
+                height: 100%
+            &-name
+                text-decoration: none
+                margin-top: 10px
+                color: #262626
+                text-align: center
+                +bold
+
+.profGal
+    background: #FAFAFA
+    border-top: 1px solid #DBDBDB
+    &__wrap
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        height: 700px
+
+        .galTab
+
+            margin: 0px auto
+            padding-top: 20px
+            &__link
+                position: relative
+                width: 62px
+                text-decoration: none
+                margin: 0px 15px 0px 15px
+                margin-top: 10px
+                font-size: 12px
+                color: #8F8F8F
+                +bold
+                &__icon
+                    position: relative
+                    top: -2px
+                    right: 6px
+            .focus
+                color: #262626
+                &::before
+                    position: absolute
+                    content: ""
+                    width: 54px
+                    height: 1px
+                    background: #262626
+                    top: -23px
+                    right: 1px
+        .galfoto
+            display: flex
+            justify-content: space-evenly
+            flex-wrap: wrap
+            &__link
+                width: 295px
+                height: 295px
+                margin: 10px auto 10px auto
+                &-foto

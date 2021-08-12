@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr-Regular';
+
+  src: url('/font/HelveticaNeueCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin regular {
+  font-family: 'HelveticaNeueCyr-Regular', sans-serif;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+
+  src: url('/font/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin medium {
+  font-family: 'HelveticaNeueCyr-Medium',
+  sans-serif;
+}
+
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+
+  src: url('/font/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin bold {
+  font-family: 'HelveticaNeueCyr-Bold', sans-serif;
+}
+
+:root {
+  --theme-color-base: #fff;
+  --mq-size-sm: 576px;
+  --mq-size-md: 768px;
+  --mq-size-lg: 992px;
+  --mq-size-xl: 1200px;
+}
+

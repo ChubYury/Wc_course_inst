@@ -1,0 +1,37 @@
+.container
+  --container-width: 100%
+  width: var(--container-width)
+  margin: 0 auto
+  //padding: 0 10px
+
+@media (min-width: 576px)
+  .container
+    --container-width: var(--mq-size-sm)
+    .header__wrapper
+      .search
+        display: block
+    .profiles__wrap
+      .profile
+        &__foto
+          margin-left: 4%
+        &__info
+          width: 50%
+          padding-left: 10%
+          .info__rating
+            margin-right: 14%
+            &-bold
+              margin: 0px 3px 0px 14px
+            span:first-child
+              margin-left: 0px
+@media (min-width: 768px)
+  .container
+    --container-width: var(--mq-size-md)
+
+@media (min-width: 992px)
+  .container
+    --container-width: var(--mq-size-lg)
+    .profiles__wrap
+      .profile__otherusers
+        display: flex
+        align-items: center
+        margin-left: 4%

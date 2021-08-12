@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("/font/HelveticaNeueCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --theme-color-base: #fff;
+  --mq-size-sm: 576px;
+  --mq-size-md: 768px;
+  --mq-size-lg: 992px;
+  --mq-size-xl: 1200px;
+}
+
+.container {
+  --container-width: 100%;
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    --container-width: var(--mq-size-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    --container-width: var(--mq-size-md);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    --container-width: var(--mq-size-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    --container-width: var(--mq-size-xl);
+  }
+  .container .navigation__link:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+}
+
+.header {
+  background: var(--theme-color-base);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.header .navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navigation__item {
+  padding: 5px;
+  position: relative;
+}
+
+.header .navigation__link {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.header .navigation__link-circle {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #4094EF;
+  border-radius: 50%;
+}
+
+.header .navigation__iconMes {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -5px;
+  left: 15px;
+  background: #DC565B;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Roboto-Regular', sans-serif;
+  line-height: 16px;
+  border-radius: 50%;
+}
+
+.header .logo {
+  margin-right: 10px;
+}
+
+.header .search {
+  position: relative;
+}
+
+.header .search__field {
+  width: 213px;
+  height: 27px;
+  background: #FAFAFA;
+  border: 1px solid #8F8F8F;
+  border-radius: 5px;
+}
+
+.header .search__field::placeholder {
+  color: #8F8F8F;
+  text-align: center;
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */
